@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainPanel">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
     <margin top="20" left="20" bottom="20" right="20"/>
     <constraints>
-      <xy x="20" y="29" width="421" height="474"/>
+      <xy x="52" y="29" width="647" height="642"/>
     </constraints>
     <properties>
       <minimumSize width="200" height="200"/>
       <preferredSize width="500" height="300"/>
+      <toolTipText value=""/>
     </properties>
     <border type="none"/>
     <children>
       <component id="e249e" class="javax.swing.JLabel" binding="ageLbl">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="56" height="29"/>
+            <preferred-size width="131" height="29"/>
           </grid>
         </constraints>
         <properties>
@@ -24,7 +25,7 @@
       <component id="7c485" class="javax.swing.JLabel" binding="emailLbl">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="56" height="16"/>
+            <preferred-size width="131" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -33,7 +34,7 @@
       </component>
       <component id="5c6f" class="javax.swing.JLabel" binding="printPersonDetailsLbl">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="56" height="0"/>
           </grid>
         </constraints>
@@ -41,41 +42,9 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="c1ef" class="javax.swing.JLabel" binding="heightLbl">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Height:"/>
-        </properties>
-      </component>
-      <component id="6b0ce" class="javax.swing.JTextField" binding="heightInput">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="50" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <text value=""/>
-          <toolTipText value="Cm"/>
-        </properties>
-      </component>
-      <component id="fde94" class="javax.swing.JTextField" binding="weightInput">
-        <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="50" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <text value=""/>
-          <toolTipText value="Kg"/>
-        </properties>
-      </component>
       <component id="df7c7" class="javax.swing.JLabel" binding="weightLbl">
         <constraints>
-          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Weight:"/>
@@ -84,7 +53,7 @@
       <component id="5f784" class="javax.swing.JLabel" binding="nameLbl">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="56" height="16"/>
+            <preferred-size width="131" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -93,7 +62,7 @@
       </component>
       <component id="3ddc6" class="javax.swing.JTextField" binding="nameInput">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="0" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
           </grid>
         </constraints>
@@ -115,7 +84,7 @@
       <component id="8a43d" class="javax.swing.JLabel" binding="surnameLbl">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="56" height="16"/>
+            <preferred-size width="131" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -124,7 +93,7 @@
       </component>
       <component id="ad646" class="javax.swing.JTextField" binding="surnameInput">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="7" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="250" height="-1"/>
           </grid>
         </constraints>
@@ -135,7 +104,7 @@
       </component>
       <component id="41269" class="javax.swing.JTextField" binding="ageInput">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="50" height="-1"/>
           </grid>
         </constraints>
@@ -146,7 +115,7 @@
       </component>
       <component id="3f078" class="javax.swing.JButton" binding="createPersonBtn">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Create Person"/>
@@ -154,7 +123,9 @@
       </component>
       <component id="388cc" class="javax.swing.JButton" binding="heightInInchesButton" default-binding="true">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="75" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Height in inches"/>
@@ -162,12 +133,93 @@
       </component>
       <component id="20f90" class="javax.swing.JLabel" binding="heightInIncLbl">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="-1" height="0"/>
           </grid>
         </constraints>
         <properties>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="ffb7" class="javax.swing.JLabel" binding="strenLbl">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Strenght:"/>
+        </properties>
+      </component>
+      <component id="95ac2" class="javax.swing.JTextField" binding="strenInput">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="25" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="fde94" class="javax.swing.JTextField" binding="weightInput">
+        <constraints>
+          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+          <toolTipText value="Kg"/>
+        </properties>
+      </component>
+      <component id="3005c" class="javax.swing.JRadioButton" binding="dbRadioB">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="DB"/>
+        </properties>
+      </component>
+      <component id="993e0" class="javax.swing.JLabel" binding="persistanceLbl">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Select Persistance:"/>
+          <toolTipText value="--&gt;"/>
+        </properties>
+      </component>
+      <component id="62c26" class="javax.swing.JRadioButton" binding="fileRadioB">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="File"/>
+        </properties>
+      </component>
+      <component id="c1ef" class="javax.swing.JLabel" binding="heightLbl">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Height:"/>
+        </properties>
+      </component>
+      <component id="6b0ce" class="javax.swing.JTextField" binding="heightInput">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+          <toolTipText value="Cm"/>
+        </properties>
+      </component>
+      <component id="6b6da" class="javax.swing.JButton" binding="savePersonB">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save Person"/>
         </properties>
       </component>
     </children>
