@@ -1,24 +1,22 @@
-fun String.heightInInches(): String {
-    val luca = this.toDouble()
-    val result = luca * 0.393701
-//    return result.toBigDecimal().toPlainString()
-    return result.toFloat()
+fun Float.heightInInches(): Float {
+    val luca = this
+    return luca * 0.393701F     //   return result.toBigDecimal().toPlainString()
 }
 
 
-class PersonHandler(var Name: String, var Surname: String, var Age: Int,
-                    var Height: Float, var Weight: Float, var Email: String, var Strength: Int) {
+class PersonHandler(var name1: String, var surname1: String, var age1: Int,
+                    var height1: Float, var weight1: Float, var email1: String, var strength1: Int) {
 
     fun createPerson(): String {
         // gets details of the person from mainPanel class.
-        val newPerson = Person(Name, Surname, Age, Height, Weight, Email, Strength)
+        val newPerson = Person(name1, surname1, age1, height1, weight1, email1, strength1)
         return newPerson.toString()
 
     }
 
     fun getHeightInInches(person: Person): Float {
 
-        var newHeight = person.height.heightInInches()
+        val newHeight = person.height.heightInInches()
         return newHeight
     }
 }

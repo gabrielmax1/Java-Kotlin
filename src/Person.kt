@@ -1,7 +1,7 @@
 import java.util.*
 
  data class Person(
-    val name: String = "Name", val surname: String = "Surname",
+    val name: String = "name1", val surname: String = "Surname",
     val age: Int = 999, val height: Float = 200.00F,
     val weight: Float = 150.00F,
     val email: String = "abc123@gre.ac.uk", val strength: Int) {
