@@ -8,3 +8,11 @@ public class MainClass {
         newWindow.setVisible(true);
     }
 }
+
+
+
+/*
+Cheat Sheet Kotlin
+https://devhints.io/kotlin
+
+ */

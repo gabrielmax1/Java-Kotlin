@@ -224,4 +224,10 @@
       </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="RadioButtonGroup1">
+      <member id="62c26"/>
+      <member id="3005c"/>
+    </group>
+  </buttonGroups>
 </form>

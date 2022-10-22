@@ -93,8 +93,10 @@ public class MainPanel extends JFrame {
                 int strength = Integer.parseInt(strenInput.getText());
 
                 PersonHandler newPerson = new PersonHandler(name, surname, age, height, weight, email, strength);
-                Person _newPerson = new Person(name, surname, age, height, weight, email, strength);
-                heightInIncLbl.setText(String.valueOf(newPerson.getHeightInInches(_newPerson)));
+                heightInIncLbl.setText(String.valueOf(newPerson.getHeightInInches()));
+//                PersonHandler newPerson = new PersonHandler(name, surname, age, height, weight, email, strength);
+//                Person _newPerson = new Person(name, surname, age, height, weight, email, strength);
+//                heightInIncLbl.setText(String.valueOf(newPerson.getHeightInInches(_newPerson)));
 
 
             }
