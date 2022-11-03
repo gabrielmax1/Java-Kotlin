@@ -2,9 +2,11 @@ import java.util.*
 
  data class Person(
     val name: String = "name1", val surname: String = "Surname",
-    val age: Int = 999, val height: Float = 200.00F,
+    val age: Int = 999, val height: Float = 200F,
     val weight: Float = 150.00F,
     val email: String = "abc123@gre.ac.uk", val strength: Int) {
+
+//     var height: Float? = null
 //    override fun toString(): String =
 //        "Fullname: ${name} ${surname}, Age: ${age}, Height: ${height} cm, Weight:${weight} Kg," +
 //                " Email:${email}, Username:${genUsername(name, surname)}, Password:${genPassword(name, strength)}"
