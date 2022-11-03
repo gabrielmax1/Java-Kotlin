@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.util.ArrayList;
 
 public class MainPanel extends JFrame {
     private JPanel mainPanel;
@@ -27,6 +27,12 @@ public class MainPanel extends JFrame {
     private JRadioButton fileRadioB;
     private JLabel persistanceLbl;
     private JButton savePersonB;
+    private JList<String> UsersList;
+    private JButton PasswordBtn;
+
+
+    private ArrayList<Person> UserList; // To add in JList personsList
+
 //    private ButtonGroup rBGroup = new ButtonGroup();
 
     public MainPanel(String title) throws HeadlessException {
@@ -35,7 +41,7 @@ public class MainPanel extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.pack();
-        this.setSize(600,550);
+        this.setSize(600,700);
         this.setLocationRelativeTo(null);
 
         createPersonBtn.addActionListener(e -> {
@@ -54,8 +60,23 @@ public class MainPanel extends JFrame {
 //            printPersonDetailsLbl.setText(addPerson.toString());
             Person _newPerson2 = new Person(name, surname, age, height, weight, email, strength);
             printPersonDetailsLbl.setText(newPerson.createPerson());
+//            var list_of_users = new JList(newPerson.getList().toArray(new Person[0]));
+//            list_of_users.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+//            list_of_users.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+//            list_of_users.setVisibleRowCount(-1);
+            UsersList.getSelectedValue();
+//            PasswordBtn.addActionListener(new ActionListener() {
+//                @Override
+//                public void actionPerformed(ActionEvent e) {
+//                    String name = nameInput.getText();
+//                    int strength1 = Integer.parseInt(String.valueOf(_newPerson2.nameLen(name)));
+//                  //  String password_ = _newPerson2.genPwdName(strength1);
+//                    String password_ = _newPerson2.genPwdName();
+//                }
+//            });
 
         });
+
         savePersonB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -100,6 +121,7 @@ public class MainPanel extends JFrame {
             }
 
         });
+
 
     }
     // TODO: Point 7.d Deocoupling the GUI from the Persistence Classes.
