@@ -107,8 +107,11 @@ public class MainPanel extends JFrame {
                 String name = nameInput.getText();
                 String surname = surnameInput.getText();
                 int age = Integer.parseInt(ageInput.getText());
-                float height = Float.parseFloat(heightInput.getText());
-                float weight = Float.parseFloat(weightInput.getText());
+                Float height = null;
+                if (!heightInput.getText().isEmpty()) {
+                    height = Float.parseFloat(String.valueOf(heightInput.getText()));
+                }
+                Float weight = Float.parseFloat(weightInput.getText());
                 String email = emailInput.getText();
 //                String password = new String();
                 int strength = Integer.parseInt(strenInput.getText());
