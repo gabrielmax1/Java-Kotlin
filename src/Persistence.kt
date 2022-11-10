@@ -4,6 +4,7 @@ abstract class Persistence {
         fun createDBPersistence() = DBPersistence()
 
         fun createFilePersistence() = FilePersistence()
+
     }
 
     abstract infix fun save(data: String)
@@ -20,6 +21,8 @@ class FilePersistence: Persistence() {
         println("Saving $data to File")
     }
 }
+
+
 
 
 
